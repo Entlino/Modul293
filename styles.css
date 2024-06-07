@@ -15,7 +15,7 @@ p {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #4d0202;
+  background-color: #9ab900;
   color: #fff;
   padding: 10px 0;
   text-align: center;
@@ -25,7 +25,7 @@ p {
   grid-row: 2;
   left: 0;
   width: 100%;
-  background-color: #4d0202;
+  background-color: #9ab900;
   padding: 10px 0;
   text-align: center;
 }
@@ -39,7 +39,7 @@ p {
 }
 
 .navbar a:hover {
-  background-color: #570202;
+  background-color: #8aa500;
 }
 
 .content {
@@ -53,7 +53,7 @@ p {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #4d0202;
+  background-color: #9ab900;
   color: #fff;
   padding: 25px 0px;
   text-align: center;
@@ -78,8 +78,7 @@ p {
 }
 
 .contact-form {
-  width: 100%;
-  max-width: 550px;
+  max-width: 850px;
   margin: 0 auto;
   padding: 20px;
   background-color: #f4f4f4;
@@ -101,7 +100,6 @@ p {
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
-  width: 90%;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
@@ -121,10 +119,59 @@ p {
   background-color: #0056b3;
 }
 
-.funfacts {
+.funfact {
   text-align: left;
+  margin-left: 10px;
+  margin-bottom: 50px;
+  margin-top: 5px;
+  margin-right: 25px;
 }
 
-.funfacts2 {
+.funfact2 {
   text-align: right;
+  margin-right: 10px;
+  margin-bottom: 50px;
+  margin-top: 5px;
+  margin-left: 25px;
+}
+
+.number {
+  text-align: left;
+  margin-left: 10px;
+  text-decoration: overline;
+}
+
+.number2 {
+  text-align: right;
+  margin-right: 10px;
+  text-decoration: overline;
+}
+
+.loader {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  z-index: 9999;
+}
+
+.loader--hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
