@@ -41,7 +41,7 @@ nav ul li a {
 }
 
 .hero {
-  background-image: url("../pictures/background1.jpg");
+  background-image: url("/background1.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;
